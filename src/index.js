@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Normalize } from 'styled-normalize';
+import { GlobalStyle } from './GlobalStyle';
+import { ThemeProvider } from 'styled-components';
+import { lightMode } from './lightMode';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={lightMode}>
+      <Normalize />
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
