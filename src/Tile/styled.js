@@ -5,11 +5,20 @@ export const TileHeader = styled.h2`
     margin: 0px;
 `;
 
-export const Container = styled.div`
-    width: 600px;
-    height: 200px;
+export const TileContainer = styled.div`
     box-shadow: 2px;
     border: 1px solid black;
     padding: 32px;
-    margin: auto;
+    margin: 32px auto;
+`;
+
+export const TileList = styled.ul`
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+`;
+
+export const TileListItem = styled.li`
+    display: inline-block;
 `;

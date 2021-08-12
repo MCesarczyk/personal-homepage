@@ -1,12 +1,34 @@
-import { Container, TileHeader } from "./styled";
+import { TileContainer, TileHeader, TileList, TileListItem } from "./styled";
 
 const Tile = ({ title, body }) => (
-    <Container>
+    <TileContainer>
         <TileHeader>
             {title}
         </TileHeader>
-        {body}
-    </Container>
+        <TileList>
+            <TileListItem>some</TileListItem>
+            <TileListItem>sample</TileListItem>
+            <TileListItem>words</TileListItem>
+            <TileListItem>some</TileListItem>
+            <TileListItem>sample</TileListItem>
+            <TileListItem>words</TileListItem>
+            <TileListItem>some</TileListItem>
+            <TileListItem>sample</TileListItem>
+            <TileListItem>words</TileListItem>
+            <TileListItem>some</TileListItem>
+            <TileListItem>sample</TileListItem>
+            <TileListItem>words</TileListItem>
+            <TileListItem>some</TileListItem>
+            <TileListItem>sample</TileListItem>
+            <TileListItem>words</TileListItem>
+            <TileListItem>some</TileListItem>
+            <TileListItem>sample</TileListItem>
+            <TileListItem>words</TileListItem>
+            <TileListItem>some</TileListItem>
+            <TileListItem>sample</TileListItem>
+            <TileListItem>words</TileListItem>
+        </TileList>
+    </TileContainer>
 );
 
 export default Tile;

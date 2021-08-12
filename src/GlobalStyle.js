@@ -16,17 +16,13 @@ body {
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 32px;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
 }
 
 button {
   cursor: pointer;
-};
-
-li {
-  list-style: none;
 };
 
 a {

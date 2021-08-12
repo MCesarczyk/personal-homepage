@@ -7,12 +7,13 @@ function App() {
       <Header
         title={"Headline"}
       />
-      <p>
-        Paragraph
-      </p>
       <Tile
         title={"Tile header"}
         body={"Lorem ipsum"}
+      />
+      <Tile
+        title={"Tile header 2"}
+        body={"Lorem ipsum again"}
       />
     </>
   );
