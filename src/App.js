@@ -1,18 +1,18 @@
-import { Header } from "./Header";
+import Header from "./Header";
 import Tile from "./Tile";
 
 function App() {
   return (
     <>
-      <Header>
-        Headline
-      </Header>
+      <Header
+        title={"Headline"}
+      />
       <p>
-      Paragraph
+        Paragraph
       </p>
       <Tile
-        title = {"Tile header"}
-        body = {"Lorem ipsum"}
+        title={"Tile header"}
+        body={"Lorem ipsum"}
       />
     </>
   );

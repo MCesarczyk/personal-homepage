@@ -10,6 +10,6 @@ export const Container = styled.div`
     height: 200px;
     box-shadow: 2px;
     border: 1px solid black;
-    padding: 10px;
+    padding: 32px;
     margin: auto;
 `;

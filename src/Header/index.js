@@ -1,5 +1,13 @@
-import styled from "styled-components";
+import { HeaderContainer, HeaderImageContainer, HeaderTitle } from "./styled";
+import photo from "../portrait.jpg";
 
-export const Header = styled.h1`
-    font-size: 38px;
-`;
+const Header = ({ title }) => (
+    <HeaderContainer>
+        <HeaderImageContainer>
+            <img src={photo} height="400px" />
+        </HeaderImageContainer>
+        <HeaderTitle>{title}</HeaderTitle>
+    </HeaderContainer>
+);
+
+export default Header;
