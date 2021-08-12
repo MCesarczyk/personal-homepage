@@ -9,7 +9,7 @@ const Header = ({ title }) => (
         <div>
             <HeaderTitle>{title}</HeaderTitle>
             <p>
-                Paragraph
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum autem placeat, eaque eos odit dignissimos enim nihil vero repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum autem placeat, eaque eos odit dignissimos enim nihil vero repellendus!
             </p>
             <button>
                 Contact
