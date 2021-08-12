@@ -1,10 +1,19 @@
+import { Header } from "./Header";
+import Tile from "./Tile";
+
 function App() {
   return (
     <>
-      <h1>
-        Header
-      </h1>
+      <Header>
+        Headline
+      </Header>
+      <p>
       Paragraph
+      </p>
+      <Tile
+        title = {"Tile header"}
+        body = {"Lorem ipsum"}
+      />
     </>
   );
 }
