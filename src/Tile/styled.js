@@ -13,12 +13,14 @@ export const TileContainer = styled.div`
 `;
 
 export const TileList = styled.ul`
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    column-gap: 115px;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: ${({ theme }) => theme.color.secondary};
+    align-items: start;
 `;
 
 export const TileListItem = styled.li`
-    display: inline-block;
+    /* color: ${({ theme }) => theme.color.secondary}; */
+    /* display: inline-block; */
 `;
