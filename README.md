@@ -4,7 +4,7 @@ The page is to summarize my achievements so far, show my future plans and simply
 
 ## Demo: 
 
-https://mcesarczyk.github.io/movie-browser/
+https://mcesarczyk.github.io/personal-homepage/
 
 _____________________
 
