@@ -4,7 +4,7 @@ import photo from "../portrait.jpg";
 const Header = ({ title }) => (
     <HeaderContainer>
         <div>
-            <img src={photo} height="400px" />
+            <img src={photo} alt="portrait" height="400px" />
         </div>
         <div>
             <HeaderTitle>{title}</HeaderTitle>

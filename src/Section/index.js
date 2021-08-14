@@ -2,7 +2,7 @@ import { SectionContainer, SectionHeader } from "./styled"
 
 const Section = ({ title, subtitle, body }) => (
     <SectionContainer>
-        <img />
+        <img alt="" />
         <SectionHeader>
             {title}
         </SectionHeader>
