@@ -8,9 +8,7 @@ import goals from "./goals"
 function App() {
   return (
     <>
-      <Header
-        title={"Headline"}
-      />
+      <Header />
       <Tile
         title={"My skills"}
         elements={skills}
