@@ -1,8 +1,18 @@
-# Getting Started with Create React App
+# This is my personal homepage
+
+The page is to summarize my achievements so far, show my future plans and simply make contact with me easier 😊
+
+## Demo: 
+
+https://mcesarczyk.github.io/movie-browser/
+
+_____________________
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
