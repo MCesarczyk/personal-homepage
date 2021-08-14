@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import { Normalize } from 'styled-normalize';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
-import { lightMode } from './lightMode';
+import { lightModeTheme } from './lightModeTheme';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={lightMode}>
+    <ThemeProvider theme={lightModeTheme}>
       <Normalize />
       <GlobalStyle />
       <App />
