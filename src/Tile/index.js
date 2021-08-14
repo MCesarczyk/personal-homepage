@@ -1,32 +1,16 @@
 import { TileContainer, TileHeader, TileList, TileListItem } from "./styled";
 
-const Tile = ({ title, body }) => (
+const Tile = ({ title, elements }) => (
     <TileContainer>
         <TileHeader>
             {title}
         </TileHeader>
         <TileList>
-            <TileListItem>some</TileListItem>
-            <TileListItem>sample</TileListItem>
-            <TileListItem>words</TileListItem>
-            <TileListItem>some</TileListItem>
-            <TileListItem>sample</TileListItem>
-            <TileListItem>words</TileListItem>
-            <TileListItem>some</TileListItem>
-            <TileListItem>sample</TileListItem>
-            <TileListItem>words</TileListItem>
-            <TileListItem>some</TileListItem>
-            <TileListItem>sample</TileListItem>
-            <TileListItem>words</TileListItem>
-            <TileListItem>some</TileListItem>
-            <TileListItem>sample</TileListItem>
-            <TileListItem>words</TileListItem>
-            <TileListItem>some</TileListItem>
-            <TileListItem>sample</TileListItem>
-            <TileListItem>words</TileListItem>
-            <TileListItem>some</TileListItem>
-            <TileListItem>sample</TileListItem>
-            <TileListItem>words</TileListItem>
+            {elements.map(element => (
+                <TileListItem key={element} >
+                    {element}
+                </TileListItem>
+            ))}
         </TileList>
     </TileContainer>
 );

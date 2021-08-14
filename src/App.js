@@ -2,6 +2,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Section from "./Section";
 import Tile from "./Tile";
+import skills from "./skills"
+import goals from "./goals"
 
 function App() {
   return (
@@ -11,9 +13,11 @@ function App() {
       />
       <Tile
         title={"My skills"}
+        elements={skills}
       />
       <Tile
         title={"My closest goals"}
+        elements={goals}
       />
       <Section
         title={"Portfolio"}
