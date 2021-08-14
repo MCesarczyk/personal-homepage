@@ -19,6 +19,16 @@ body {
   padding: 32px;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.tabletMax}) {
+        font-size: 16px;
+        padding: 24px;
+    }
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobileMax}) {
+        font-size: 14px;
+        padding: 14px;
+    }
 }
 
 button {

@@ -1,10 +1,10 @@
-import { HeaderButton, HeaderCaption, HeaderContainer, HeaderParagraph, HeaderTitle } from "./styled";
+import { HeaderButton, HeaderCaption, HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
 import photo from "../portrait.jpg";
 
 const Header = () => (
     <HeaderContainer>
         <div>
-            <img src={photo} alt="portrait" height="400px" />
+            <HeaderImage src={photo} alt="portrait" />
         </div>
         <div>
             <HeaderCaption>THIS IS:</HeaderCaption>
