@@ -1,6 +1,6 @@
 const skills = [
     "Semantic HTML",
-    "Responsiveness/Media query",
+    "Media query",
     "CSS/BEM convention",
     "CSS-Flexbox",
     "CSS-Grid",
@@ -15,8 +15,8 @@ const skills = [
     "React-redux",
     "Redux-Saga",
     "React Router",
-    "NPM / Node.js (frontend)",
-    "Git / gh-pages",
+    "NPM/Node.js(frontend)",
+    "Git/gh-pages",
     "GitHub flow",
     "Markdown",
     "Trello: teamwork",
