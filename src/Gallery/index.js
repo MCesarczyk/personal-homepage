@@ -3,6 +3,7 @@ import { useGithubApiData } from "./useGithubApiData";
 import Tile from "./Tile";
 import logo from "../githubLogo.svg";
 import Loader from "./Loader";
+import ErrorMessage from "./ErrorMessage";
 
 const Gallery = ({ title, subtitle, body }) => {
     const repos = useGithubApiData();
@@ -20,9 +21,7 @@ const Gallery = ({ title, subtitle, body }) => {
             {status === "loading" ? (
                 <Loader />
             ) : (status === "error" ? (
-                <div>
-                    Unable to fetch... please check your internet connection
-                </div>
+                <ErrorMessage />
             ) : (
                 <GalleryTilesContainer>
                     {repos.map((repo) => (
