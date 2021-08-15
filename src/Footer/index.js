@@ -1,5 +1,9 @@
+import { FooterContainer, FooterHeader, FooterLink, FooterLogo, FooterParagraph } from "./styled";
 import { Caption } from "../Caption";
-import { FooterContainer, FooterHeader, FooterLink } from "./styled";
+import github from "../githubThumbnail.svg";
+import facebook from "../facebookThumbnail.svg";
+import linkedin from "../linkedinThumbnail.svg";
+import instagram from "../instagramThumbnail.svg";
 
 const Footer = () => (
     <FooterContainer>
@@ -11,11 +15,14 @@ const Footer = () => (
                 michal.cesarczyk@gmail.com
             </FooterLink>
         </FooterHeader>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur.
-        </p>
+        <FooterParagraph>
+            I'm open to new challenging tasks, so when you need website or one page application to launch, feel free to talk to me.
+        </FooterParagraph>
         <div>
-            Social media icons
+        <FooterLogo src={github}></FooterLogo>
+        <FooterLogo src={facebook}></FooterLogo>
+        <FooterLogo src={linkedin}></FooterLogo>
+        <FooterLogo src={instagram}></FooterLogo>
         </div>
     </FooterContainer>
 );
