@@ -4,12 +4,13 @@ import { Normalize } from 'styled-normalize';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { lightModeTheme } from './lightModeTheme';
+import { darkModeTheme } from './darkModeTheme';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={lightModeTheme}>
+    <ThemeProvider theme={darkModeTheme}>
       <Normalize />
       <GlobalStyle />
       <App />

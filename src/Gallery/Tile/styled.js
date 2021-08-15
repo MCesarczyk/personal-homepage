@@ -4,8 +4,9 @@ export const TileBody = styled.div`
     text-align: left;
     padding: 56px;
     border-radius: 4px;
-    background-color: ${({ theme }) => theme.color.white};
-    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    background-color: ${({ theme }) => theme.color.secondaryBackground};
+    border: ${({ theme }) => theme.border};
+    box-shadow: ${({ theme }) => theme.shadow};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         font-size: 16px;
@@ -26,7 +27,7 @@ export const TileBody = styled.div`
 export const TileHeader = styled.h3`
     font-size: 24px;
     font-weight: 700;
-    color: ${({ theme }) => theme.color.blue};
+    color: ${({ theme }) => theme.color.themeColor};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         font-size: 22px;
@@ -47,5 +48,5 @@ export const TileList = styled.ul`
 `;
 
 export const TileLink = styled.a`
-    color: ${({ theme }) => theme.color.blue};
+    color: ${({ theme }) => theme.color.themeColor};
 `;

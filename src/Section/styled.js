@@ -19,8 +19,8 @@ export const SectionContainer = styled.div`
     padding: 32px;
     margin: 32px auto;
     border-radius: 4px;
-    background-color: ${({ theme }) => theme.color.white};
-    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    background-color: ${({ theme }) => theme.color.secondaryBackground};
+    box-shadow: ${({ theme }) => theme.shadow};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         padding-left: 24px;
