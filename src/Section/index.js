@@ -1,17 +1,17 @@
-import { SectionContainer, SectionHeader } from "./styled"
+import { SectionContainer, SectionHeader, List } from "./styled";
 
-const Section = ({ title, subtitle, body }) => (
+const Section = ({ title, elements }) => (
     <SectionContainer>
-        <img alt="" />
         <SectionHeader>
             {title}
         </SectionHeader>
-        <p>
-            {subtitle}
-        </p>
-        <div>
-            {body}
-        </div>
+        <List>
+            {elements.map(element => (
+                <li key={element} >
+                    {element}
+                </li>
+            ))}
+        </List>
     </SectionContainer>
 );
 
