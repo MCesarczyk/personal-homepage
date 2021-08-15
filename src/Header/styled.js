@@ -12,6 +12,13 @@ export const HeaderContainer = styled.header`
     }
 `;
 
+export const HeaderInnerContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+`;
+
 export const HeaderImage = styled.img`
     width: 400px;
 
