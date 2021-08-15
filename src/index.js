@@ -10,7 +10,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={darkModeTheme}>
+    <ThemeProvider theme={lightModeTheme}>
       <Normalize />
       <GlobalStyle />
       <App />
