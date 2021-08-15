@@ -18,5 +18,6 @@ export const FooterHeader = styled.h2`
 `;
 
 export const FooterLink = styled.a`
+    font-weight: 900;
     color: ${({ theme }) => theme.color.primary};
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SectionHeader = styled.h2`
     font-size: 30px;
+    font-weight: 900;
     margin: 0px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {

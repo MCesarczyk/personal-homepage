@@ -23,6 +23,7 @@ export const HeaderImage = styled.img`
 export const HeaderTitle = styled.h1`
     display: block;
     font-size: 38px;
+    font-weight: 900;
     text-align: left;
     margin-top: 12px;
     margin-bottom: 36px;
