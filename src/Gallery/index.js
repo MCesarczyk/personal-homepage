@@ -4,6 +4,7 @@ import Tile from "./Tile";
 
 const Gallery = ({ title, subtitle, body }) => {
     const repos = useGithubApiData();
+    const status = repos.status;
     console.log(repos);
 
     return (
@@ -16,30 +17,27 @@ const Gallery = ({ title, subtitle, body }) => {
                 {subtitle}
             </GallerySubtitle>
             <GalleryContainer>
-                <Tile
-                    title={"Repository"}
-                    description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
-                    demoLink={"https://link.demo.com"}
-                    codeLink={"https://link.code.com"}
-                />
-                <Tile
-                    title={"Repository"}
-                    description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
-                    demoLink={"https://link.demo.com"}
-                    codeLink={"https://link.code.com"}
-                />
-                <Tile
-                    title={"Repository"}
-                    description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
-                    demoLink={"https://link.demo.com"}
-                    codeLink={"https://link.code.com"}
-                />
-                <Tile
-                    title={"Repository"}
-                    description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
-                    demoLink={"https://link.demo.com"}
-                    codeLink={"https://link.code.com"}
-                />
+                {status === "loading" ? (
+                    <div>
+                        Loading...
+                    </div>
+                ) : (status === "error" ? (
+                    <div>
+                        Unable to fetch... please check your internet connection
+                    </div>
+                ) : (
+                    <>
+                        {repos.map((repo) => (
+                            <Tile
+                                // key={repo.id}
+                                title={repo.name}
+                                description={repo.description || "n/a"}
+                                demoLink={`https://mcesarczyk.github.io/${repo.name}`}
+                                codeLink={repo.html_url}
+                            />
+                        ))}
+                    </>
+                ))}
             </GalleryContainer>
         </GalleryWrapper>
     )

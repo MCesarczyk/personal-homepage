@@ -21,6 +21,7 @@ export const useGithubApiData = () => {
         setRepos(apiResponse);
 
       } catch (error) {
+        setRepos({ status: "error" });
         console.log(error.message);
       }
     };
