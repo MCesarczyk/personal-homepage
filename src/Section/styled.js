@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const SectionHeader = styled.h2`
     font-size: 30px;
     margin: 0px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        font-size: 24px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        font-size: 18px;
+    }
 `;
 
 export const SectionContainer = styled.div`

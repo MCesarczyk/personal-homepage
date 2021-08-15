@@ -1,18 +1,42 @@
-import { GalleryContainer, GalleryHeader } from "./styled"
+import { GalleryWrapper, GalleryHeader, GalleryContainer, GallerySubtitle } from "./styled"
+import Tile from "./Tile";
 
-const Section = ({ title, subtitle, body }) => (
-    <GalleryContainer>
+const Gallery = ({ title, subtitle, body }) => (
+    <GalleryWrapper>
         <img alt="" />
         <GalleryHeader>
             {title}
         </GalleryHeader>
-        <p>
+        <GallerySubtitle>
             {subtitle}
-        </p>
-        <div>
-            {body}
-        </div>
-    </GalleryContainer>
+        </GallerySubtitle>
+        <GalleryContainer>
+            <Tile
+                title={"Repository"}
+                description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
+                demoLink={"https://link.demo.com"}
+                codeLink={"https://link.code.com"}
+            />
+            <Tile
+                title={"Repository"}
+                description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
+                demoLink={"https://link.demo.com"}
+                codeLink={"https://link.code.com"}
+            />
+            <Tile
+                title={"Repository"}
+                description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
+                demoLink={"https://link.demo.com"}
+                codeLink={"https://link.code.com"}
+            />
+            <Tile
+                title={"Repository"}
+                description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut labore voluptates, perspiciatis aliquid rerum ratione veniam tenetur."}
+                demoLink={"https://link.demo.com"}
+                codeLink={"https://link.code.com"}
+            />
+        </GalleryContainer>
+    </GalleryWrapper>
 );
 
-export default Section;
+export default Gallery;
