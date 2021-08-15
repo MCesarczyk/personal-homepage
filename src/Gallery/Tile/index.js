@@ -8,10 +8,10 @@ const Tile = ({ title, description, demoLink, codeLink }) => (
         </p>
         <TileList>
             <li>
-                Demo: <TileLink>{demoLink}</TileLink>
+                Demo:&nbsp;<TileLink href={demoLink} target="_blank">{demoLink}</TileLink>
             </li>
             <li>
-                Code: <TileLink>{codeLink}</TileLink>
+                Code:&nbsp;<TileLink href={codeLink} target="_blank">{codeLink}</TileLink>
             </li>
         </TileList>
     </TileContainer>
