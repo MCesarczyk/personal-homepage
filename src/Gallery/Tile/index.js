@@ -1,20 +1,20 @@
-import { TileContainer, TileHeader, TileLink, TileList } from "./styled";
+import { TileBody, TileHeader, TileLink, TileList } from "./styled";
 
 const Tile = ({ title, description, demoLink, codeLink }) => (
-    <TileContainer>
+    <TileBody>
         <TileHeader>{title}</TileHeader>
         <p>
             {description}
         </p>
         <TileList>
             <li>
-                Demo:&nbsp;<TileLink href={demoLink} target="_blank">{demoLink}</TileLink>
+                Demo: <TileLink href={demoLink} target="_blank">{demoLink}</TileLink>
             </li>
             <li>
-                Code:&nbsp;<TileLink href={codeLink} target="_blank">{codeLink}</TileLink>
+                Code: <TileLink href={codeLink} target="_blank">{codeLink}</TileLink>
             </li>
         </TileList>
-    </TileContainer>
+    </TileBody>
 );
 
 export default Tile;

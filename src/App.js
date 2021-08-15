@@ -2,8 +2,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Gallery from "./Gallery";
 import Section from "./Section";
-import skills from "./skills"
-import goals from "./goals"
+import skills from "./skills";
+import goals from "./goals";
 
 function App() {
   return (

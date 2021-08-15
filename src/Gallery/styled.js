@@ -10,8 +10,12 @@ export const GalleryHeader = styled.h2`
     font-weight: 900;
     margin: 0px;
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
+        font-size: 28px;
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        font-size: px;
+        font-size: 24px;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
@@ -27,12 +31,13 @@ export const GallerySubtitle = styled.p`
     }
 `;
 
-export const GalleryContainer = styled.div`
+export const GalleryTilesContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 32px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        grid-template-columns: 1fr;
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        grid-template-columns: minmax(0, 1fr);
     }
 `;
 

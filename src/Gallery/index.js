@@ -1,12 +1,11 @@
-import { GalleryWrapper, GalleryHeader, GalleryContainer, GallerySubtitle } from "./styled";
+import { GalleryWrapper, GalleryHeader, GalleryTilesContainer, GallerySubtitle } from "./styled";
 import { useGithubApiData } from "./useGithubApiData";
 import Tile from "./Tile";
 
 const Gallery = ({ title, subtitle, body }) => {
     const repos = useGithubApiData();
     const status = repos.status;
-    console.log(repos);
-
+    
     return (
         <GalleryWrapper>
             <img alt="" />
@@ -16,7 +15,7 @@ const Gallery = ({ title, subtitle, body }) => {
             <GallerySubtitle>
                 {subtitle}
             </GallerySubtitle>
-            <GalleryContainer>
+            <GalleryTilesContainer>
                 {status === "loading" ? (
                     <div>
                         Loading...
@@ -29,7 +28,7 @@ const Gallery = ({ title, subtitle, body }) => {
                     <>
                         {repos.map((repo) => (
                             <Tile
-                                // key={repo.id}
+                                key={repo.id}
                                 title={repo.name}
                                 description={repo.description || "n/a"}
                                 demoLink={`https://mcesarczyk.github.io/${repo.name}`}
@@ -38,7 +37,7 @@ const Gallery = ({ title, subtitle, body }) => {
                         ))}
                     </>
                 ))}
-            </GalleryContainer>
+            </GalleryTilesContainer>
         </GalleryWrapper>
     )
 };
