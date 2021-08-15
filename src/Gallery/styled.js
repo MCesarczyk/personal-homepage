@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GalleryWrapper = styled.div`
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 120px;
 `;
 
 export const GalleryLogo = styled.img`

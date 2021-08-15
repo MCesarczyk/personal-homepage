@@ -1,4 +1,5 @@
-import { HeaderCaption, HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
+import { HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
+import { Caption } from "../Caption";
 import { Button } from "../Button";
 import photo from "../portrait.jpg";
 
@@ -8,7 +9,7 @@ const Header = () => (
             <HeaderImage src={photo} alt="portrait" />
         </div>
         <div>
-            <HeaderCaption>THIS IS:</HeaderCaption>
+            <Caption>THIS IS:</Caption>
             <HeaderTitle>Michał Cesarczyk</HeaderTitle>
             <HeaderParagraph>
                 Experienced mechanical engineer and CNC programmer who's just becoming a frontend developer.

@@ -37,10 +37,6 @@ export const HeaderTitle = styled.h1`
     }
 `;
 
-export const HeaderCaption = styled.p`
-    font-size: 12px;
-`;
-
 export const HeaderParagraph = styled.p`
     margin-bottom: 32px;
 `;

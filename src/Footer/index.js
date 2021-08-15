@@ -1,8 +1,12 @@
+import { Caption } from "../Caption";
 import { FooterContainer, FooterHeader, FooterLink } from "./styled";
 
 const Footer = () => (
     <FooterContainer>
         <FooterHeader>
+            <Caption>
+                CONTACT:
+            </Caption>
             <FooterLink href="mailto:michal.cesarczyk@gmail.com">
                 michal.cesarczyk@gmail.com
             </FooterLink>
