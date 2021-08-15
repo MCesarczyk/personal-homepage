@@ -1,14 +1,15 @@
-import { GalleryWrapper, GalleryHeader, GalleryTilesContainer, GallerySubtitle } from "./styled";
+import { GalleryWrapper, GalleryHeader, GalleryTilesContainer, GallerySubtitle, GalleryLogo } from "./styled";
 import { useGithubApiData } from "./useGithubApiData";
 import Tile from "./Tile";
+import logo from "../githubLogo.svg";
 
 const Gallery = ({ title, subtitle, body }) => {
     const repos = useGithubApiData();
     const status = repos.status;
-    
+
     return (
         <GalleryWrapper>
-            <img alt="" />
+            <GalleryLogo src={logo} alt="Github logo"></GalleryLogo>
             <GalleryHeader>
                 {title}
             </GalleryHeader>

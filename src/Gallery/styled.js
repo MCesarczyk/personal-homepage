@@ -5,6 +5,10 @@ export const GalleryWrapper = styled.div`
     margin-bottom: 64px;
 `;
 
+export const GalleryLogo = styled.img`
+    margin: 12px;
+`;
+
 export const GalleryHeader = styled.h2`
     font-size: 30px;
     font-weight: 900;
