@@ -1,4 +1,5 @@
-import { HeaderButton, HeaderCaption, HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
+import { HeaderCaption, HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
+import { Button } from "../Button";
 import photo from "../portrait.jpg";
 
 const Header = () => (
@@ -12,9 +13,9 @@ const Header = () => (
             <HeaderParagraph>
                 Experienced mechanical engineer and CNC programmer who's just becoming a frontend developer.
             </HeaderParagraph>
-            <HeaderButton>
+            <Button>
                 ✉ Contact
-            </HeaderButton>
+            </Button>
         </div>
     </HeaderContainer>
 );
