@@ -15,8 +15,16 @@ export const HeaderContainer = styled.header`
 export const HeaderImage = styled.img`
     width: 400px;
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
+        width: 340px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        width: 280px;
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        width: 83%;
+        width: 132px;
     }
 `;
 

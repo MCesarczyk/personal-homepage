@@ -28,8 +28,20 @@ export const FooterHeader = styled.h2`
 export const FooterLink = styled.a`
     display: block;
     font-weight: 900;
-    margin: 24px 0 24px 0;
     color: ${({ theme }) => theme.color.primary};
+    margin: 24px 0 24px 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
+        margin: 21px 0 21px 0;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        margin: 18px 0 18px 0;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        margin: 12px 0 12px 0;
+    }
 `;
 
 export const FooterParagraph = styled.p`
@@ -37,5 +49,22 @@ export const FooterParagraph = styled.p`
 `;
 
 export const FooterLogo = styled.img`
-    margin: 12px;
+    width: 48px;
+    margin: 24px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
+        width: 42px;
+        margin: 21px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        width: 40px;
+        margin: 20px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        width: 32px;
+        margin: 16px;
+
+    }
 `;
