@@ -3,8 +3,8 @@ export const lightModeTheme = {
         primary: "#252525",
         secondary: "#6E7E91",
         white: "#FFF",
+        blue: "#0366D6",
         shadow: "#090A33",
-        elementBackground: "#0366D6",
         elementBorder: "#D1D5DA",
         background: "#FBFBFE"
     },

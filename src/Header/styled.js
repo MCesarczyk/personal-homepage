@@ -49,6 +49,6 @@ export const HeaderButton = styled.button`
     padding: 12px 16px;
     border-radius: 4px;
     color: ${({ theme }) => theme.color.white};
-    background-color: ${({ theme }) => theme.color.elementBackground};
+    background-color: ${({ theme }) => theme.color.blue};
     border: 1px solid ${({ theme }) => theme.color.elementBorder};
 `;
