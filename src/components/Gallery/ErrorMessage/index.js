@@ -12,7 +12,11 @@ const ErrorMessage = () => (
             It looks there is any problem with connection.<br />
             You can check my projects directly on a Github website.
         </ErrorCaption>
-        <Button>Go to Github</Button>
+        <Button>
+            <a href="https://github.com/MCesarczyk" target="_blank" >
+                Go to Github
+            </a>
+        </Button>
     </>
 );
 

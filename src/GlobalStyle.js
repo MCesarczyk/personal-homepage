@@ -40,4 +40,5 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: currentColor;
 }`;

@@ -11,7 +11,7 @@ const Footer = () => (
             <Caption>
                 CONTACT:
             </Caption>
-            <FooterLink href="mailto:michal.cesarczyk@gmail.com">
+            <FooterLink id="contact" href="mailto:michal.cesarczyk@gmail.com">
                 michal.cesarczyk@gmail.com
             </FooterLink>
         </FooterHeader>

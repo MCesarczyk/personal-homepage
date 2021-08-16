@@ -17,7 +17,7 @@ const Header = () => (
                 Experienced mechanical engineer and CNC programmer who's just becoming a frontend developer.
             </HeaderParagraph>
             <Button>
-                ✉ Contact
+                <a href="#contact" >✉ Contact</a>
             </Button>
         </div>
     </HeaderContainer>
