@@ -4,10 +4,11 @@ import Gallery from "./Gallery";
 import Section from "./Section";
 import skills from "./skills";
 import goals from "./goals";
+import { Container } from "./Container";
 
 function App() {
   return (
-    <>
+    <Container>
       <Header />
       <Section
         title={"My skills"}
@@ -22,7 +23,7 @@ function App() {
         subtitle={"My recent projects"}
       />
       <Footer />
-    </>
+    </Container>
   );
 }
 
