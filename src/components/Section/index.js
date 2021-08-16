@@ -7,9 +7,9 @@ const Section = ({ title, elements }) => (
             {title}
         </SectionHeader>
         <SectionList>
-            {elements.map(element => (
+            {elements.map((element, index) => (
                 <>
-                    <SectionListItem key={element} >
+                    <SectionListItem key={index} >
                         <SectionListItemImage src={circle} />
                         {element}
                     </SectionListItem>
