@@ -1,20 +1,6 @@
 import styled from "styled-components";
 
-export const SectionHeader = styled.h2`
-    font-size: 30px;
-    font-weight: 900;
-    margin: 0px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        font-size: 24px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        font-size: 18px;
-    }
-`;
-
-export const SectionContainer = styled.div`
+export const StyledSection = styled.section`
     box-shadow: 2px;
     padding: 32px;
     margin: 32px auto;
@@ -31,7 +17,21 @@ export const SectionContainer = styled.div`
     }
 `;
 
-export const List = styled.ul`
+export const SectionHeader = styled.h2`
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        font-size: 24px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        font-size: 18px;
+    }
+`;
+
+export const SectionList = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: ${({ theme }) => theme.color.secondary};
@@ -46,11 +46,11 @@ export const List = styled.ul`
     }
 `;
 
-export const ListItem = styled.li`
+export const SectionListItem = styled.li`
     margin-bottom: 8px;
 `;
 
-export const ListItemImage = styled.img`
+export const SectionListItemImage = styled.img`
     width: 9px;
     margin-right: 16px;
 

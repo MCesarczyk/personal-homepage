@@ -1,22 +1,22 @@
-import { SectionContainer, SectionHeader, List, ListItemImage, ListItem } from "./styled";
+import { StyledSection, SectionHeader, SectionList, SectionListItemImage, SectionListItem } from "./styled";
 import circle from "../listStyleCircle.svg";
 
 const Section = ({ title, elements }) => (
-    <SectionContainer>
+    <StyledSection>
         <SectionHeader>
             {title}
         </SectionHeader>
-        <List>
+        <SectionList>
             {elements.map(element => (
                 <>
-                    <ListItem key={element} >
-                        <ListItemImage src={circle} />
+                    <SectionListItem key={element} >
+                        <SectionListItemImage src={circle} />
                         {element}
-                    </ListItem>
+                    </SectionListItem>
                 </>
             ))}
-        </List>
-    </SectionContainer>
+        </SectionList>
+    </StyledSection>
 );
 
 export default Section;
