@@ -1,9 +1,9 @@
 import { GalleryWrapper, GalleryHeader, GalleryTilesContainer, GallerySubtitle, GalleryLogo } from "./styled";
 import { useGithubApiData } from "./useGithubApiData";
 import Tile from "./Tile";
-import logo from "../githubLogo.svg";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
+import logo from "../images/githubLogo.svg";
 
 const Gallery = ({ title, subtitle, body }) => {
     const repos = useGithubApiData();

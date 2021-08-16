@@ -1,7 +1,7 @@
 import { HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
 import { Caption } from "../Caption";
 import { Button } from "../Button";
-import photo from "../portrait.jpg";
+import photo from "../images/portrait.jpg";
 import ThemeSwitcher from "../ThemeSwitcher";
 
 const Header = () => (

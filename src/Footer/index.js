@@ -1,9 +1,9 @@
 import { FooterContainer, FooterHeader, FooterLink, FooterLogo, FooterParagraph } from "./styled";
 import { Caption } from "../Caption";
-import github from "../githubThumbnail.svg";
-import facebook from "../facebookThumbnail.svg";
-import linkedin from "../linkedinThumbnail.svg";
-import instagram from "../instagramThumbnail.svg";
+import github from "../images/githubThumbnail.svg";
+import facebook from "../images/facebookThumbnail.svg";
+import linkedin from "../images/linkedinThumbnail.svg";
+import instagram from "../images/instagramThumbnail.svg";
 
 const Footer = () => (
     <FooterContainer>

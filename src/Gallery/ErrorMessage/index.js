@@ -1,6 +1,6 @@
 import { ErrorCaption, ErrorHeader, ErrorSign } from "./styled";
 import { Button } from "../../Button";
-import sign from "../../warningSign.svg";
+import sign from "../../images/warningSign.svg";
 
 const ErrorMessage = () => (
     <>
