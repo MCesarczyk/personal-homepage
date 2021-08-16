@@ -45,3 +45,27 @@ export const List = styled.ul`
         grid-template-columns: 1fr;
     }
 `;
+
+export const ListItem = styled.li`
+    margin-bottom: 8px;
+`;
+
+export const ListItemImage = styled.img`
+    width: 9px;
+    margin-right: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
+        width: 8px;
+        margin-right: 14px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        width: 7px;
+        margin-right: 12px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        width: 6px;
+        margin-right: 8px;
+    }
+`;

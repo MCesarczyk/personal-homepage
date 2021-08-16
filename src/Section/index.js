@@ -1,4 +1,5 @@
-import { SectionContainer, SectionHeader, List } from "./styled";
+import { SectionContainer, SectionHeader, List, ListItemImage, ListItem } from "./styled";
+import circle from "../listStyleCircle.svg";
 
 const Section = ({ title, elements }) => (
     <SectionContainer>
@@ -7,9 +8,12 @@ const Section = ({ title, elements }) => (
         </SectionHeader>
         <List>
             {elements.map(element => (
-                <li key={element} >
-                    {element}
-                </li>
+                <>
+                    <ListItem key={element} >
+                        <ListItemImage src={circle} />
+                        {element}
+                    </ListItem>
+                </>
             ))}
         </List>
     </SectionContainer>
