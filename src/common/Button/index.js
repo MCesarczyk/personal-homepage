@@ -7,4 +7,10 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.buttonText};
     background-color: ${({ theme }) => theme.color.themeColor};
     border: 1px solid ${({ theme }) => theme.color.elementBorder};
+    transition: filter 1s, transform 0.2s;
+
+    &:hover {
+        filter: brightness(130%);
+        transform: scale(1.05);
+    }
 `;

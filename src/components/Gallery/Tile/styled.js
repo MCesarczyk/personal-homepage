@@ -7,6 +7,7 @@ export const TileBody = styled.div`
     background-color: ${({ theme }) => theme.color.secondaryBackground};
     border: ${({ theme }) => theme.border};
     box-shadow: ${({ theme }) => theme.shadow};
+    transition: box-shadow 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         font-size: 16px;
@@ -21,6 +22,10 @@ export const TileBody = styled.div`
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
         font-size: 12px;
         padding: 24px;
+    }
+    
+    &:hover {
+        box-shadow: 0px 0px 6px 0px ${({ theme }) => theme.color.themeColor};
     }
 `;
 

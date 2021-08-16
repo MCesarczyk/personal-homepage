@@ -7,6 +7,7 @@ export const StyledSection = styled.section`
     border-radius: 4px;
     background-color: ${({ theme }) => theme.color.secondaryBackground};
     box-shadow: ${({ theme }) => theme.shadow};
+    transition: box-shadow 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         padding-left: 24px;
@@ -14,6 +15,10 @@ export const StyledSection = styled.section`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
         padding-left: 16px;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 6px 0px ${({ theme }) => theme.color.themeColor};
     }
 `;
 
