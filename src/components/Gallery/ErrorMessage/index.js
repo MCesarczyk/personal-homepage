@@ -13,7 +13,7 @@ const ErrorMessage = () => (
             You can check my projects directly on a Github website.
         </ErrorCaption>
         <Button>
-            <a href="https://github.com/MCesarczyk" target="_blank" >
+            <a href="https://github.com/MCesarczyk" target="_blank" rel="noreferrer" >
                 Go to Github
             </a>
         </Button>
