@@ -21,7 +21,9 @@ const skills = [
     "Markdown",
     "Trello: teamwork",
     "Figma: reading UI layout",
-    "Scrum/Agile metodology"
+    "Scrum/Agile metodology",
+    "Expert in CNC programming",
+    "General technical knowledge"
     ]
 
     export default skills;
