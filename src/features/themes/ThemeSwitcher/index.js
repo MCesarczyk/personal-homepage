@@ -1,8 +1,8 @@
 import { SwitcherButton } from "./styled";
 
-const ThemeSwitcher = () => {
+const ThemeSwitcher = ({ onClick }) => {
     return (
-        <SwitcherButton>THEME</SwitcherButton>
+        <SwitcherButton onClick={onClick}>THEME</SwitcherButton>
     )
 };
 

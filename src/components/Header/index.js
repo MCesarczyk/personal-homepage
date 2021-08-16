@@ -3,7 +3,6 @@ import { Caption } from "../../common/Caption";
 import { Button } from "../../common/Button";
 import photo from "../../images/portrait.png";
 import icon from "../../images/envelopeIcon.svg";
-import ThemeSwitcher from "../../features/themes/ThemeSwitcher";
 
 const Header = () => (
     <HeaderContainer>
@@ -11,7 +10,6 @@ const Header = () => (
             <HeaderImage src={photo} alt="portrait" />
         </div>
         <div>
-        <ThemeSwitcher />
             <Caption>THIS IS:</Caption>
             <HeaderTitle>Michał Cesarczyk</HeaderTitle>
             <HeaderParagraph>
