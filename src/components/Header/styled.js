@@ -55,3 +55,20 @@ export const HeaderTitle = styled.h1`
 export const HeaderParagraph = styled.p`
     margin-bottom: 32px;
 `;
+
+export const HeaderButtonIcon = styled.img`
+    height: 18px;
+    margin-bottom: -2px;
+    margin-right: 18px;
+    text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        height: 16px;
+        margin-right: 16px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        height: 14px;
+        margin-right: 14px;
+    }
+`;
