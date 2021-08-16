@@ -3,7 +3,7 @@ import { useGithubApiData } from "./useGithubApiData";
 import Tile from "./Tile";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
-import logo from "../images/githubLogo.svg";
+import logo from "../../images/githubLogo.svg";
 
 const Gallery = ({ title, subtitle, body }) => {
     const repos = useGithubApiData();

@@ -1,10 +1,10 @@
-import Footer from "./Footer";
-import Header from "./Header";
-import Gallery from "./Gallery";
-import Section from "./Section";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Gallery from "./components/Gallery";
+import Section from "./components/Section";
 import skills from "./skills";
 import goals from "./goals";
-import { Container } from "./Container";
+import { Container } from "./common/Container";
 
 function App() {
   return (

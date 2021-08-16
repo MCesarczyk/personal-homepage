@@ -1,4 +1,4 @@
-import circle from "../../images/loaderCircle.svg";
+import circle from "../../../images/loaderCircle.svg";
 import { LoaderCaption, LoaderCircle } from "./styled";
 
 const Loader = () => (

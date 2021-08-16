@@ -1,8 +1,8 @@
 import { HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
-import { Caption } from "../Caption";
-import { Button } from "../Button";
-import photo from "../images/portrait.jpg";
-import ThemeSwitcher from "../ThemeSwitcher";
+import { Caption } from "../../common/Caption";
+import { Button } from "../../common/Button";
+import photo from "../../images/portrait.jpg";
+import ThemeSwitcher from "../../features/themes/ThemeSwitcher";
 
 const Header = () => (
     <HeaderContainer>
