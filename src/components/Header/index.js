@@ -1,7 +1,7 @@
 import { HeaderButtonIcon, HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
 import { Caption } from "../../common/Caption";
 import { Button } from "../../common/Button";
-import photo from "../../images/portrait.jpg";
+import photo from "../../images/portrait.png";
 import icon from "../../images/envelopeIcon.svg";
 import ThemeSwitcher from "../../features/themes/ThemeSwitcher";
 
