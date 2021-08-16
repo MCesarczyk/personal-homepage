@@ -27,10 +27,10 @@ const Gallery = ({ title, subtitle, body }) => {
                     {repos.map((repo) => (
                         <Tile
                             key={repo.id}
-                            title={repo.name}
+                            title={repo.name || "n/a"}
                             description={repo.description || "n/a"}
-                            demoLink={`https://mcesarczyk.github.io/${repo.name}`}
-                            codeLink={repo.html_url}
+                            demoLink={repo.homepage || "n/a"}
+                            codeLink={repo.html_url || "n/a"}
                         />
                     ))}
                 </GalleryTilesContainer>
