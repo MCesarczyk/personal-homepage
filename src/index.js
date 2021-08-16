@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Normalize } from 'styled-normalize';
 import { GlobalStyle } from './GlobalStyle';
-import { ThemeProvider } from 'styled-components';
-import { lightMode, darkMode } from './theme';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import { Provider } from 'react-redux';
@@ -12,11 +10,9 @@ import store from './store';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <ThemeProvider theme={lightMode}>
       <Normalize />
       <GlobalStyle />
       <App />
-      </ThemeProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
