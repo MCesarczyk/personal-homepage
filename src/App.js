@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import { useState } from "react";
 import { Container } from "./common/Container";
 import ThemeSwitcher from "./features/themes/ThemeSwitcher";
 import Header from "./components/Header";
@@ -9,9 +8,11 @@ import Footer from "./components/Footer";
 import skills from "./skills";
 import goals from "./goals";
 import { lightMode, darkMode } from './theme';
+import { useLocalStorageState } from "./useLocalStorageState";
 
 function App() {
-  const [theme, setTheme] = useState(lightMode);
+  const [theme, setTheme] = useLocalStorageState("theme", lightMode);
+  
   const onButtonClick = () => {
     setTheme(theme === lightMode ? darkMode : lightMode)
   };
