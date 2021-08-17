@@ -9,7 +9,7 @@ export const SwitcherButton = styled.button`
     height: 24px;
     padding: 0px;
     border: none;
-    color: ${({theme})=>theme.color.primary};
+    color: ${({ theme }) => theme.color.primary};
     background-color: transparent;
     position: absolute;
     top: 40px; 

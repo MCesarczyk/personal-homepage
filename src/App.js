@@ -24,7 +24,6 @@ function App() {
           theme={theme}
           onClick={() => onButtonClick()}
         >
-          THEME
         </ThemeSwitcher>
         <Container>
           <Header />

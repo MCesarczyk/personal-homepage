@@ -4,11 +4,9 @@ import dark from "../../../images/darkMode.svg";
 import { lightMode } from "../../../theme";
 
 const ThemeSwitcher = ({ theme, onClick }) => {
-    console.log(theme);
-
     return (
         <SwitcherButton onClick={onClick}>
-             {theme === lightMode ? "LIGHT MODE ON" : "DARK MODE ON"}
+            {theme === lightMode ? "LIGHT MODE ON" : "DARK MODE ON"}
             <SwitcherButtonImage src={theme === lightMode ? light : dark} />
         </SwitcherButton>
     )
