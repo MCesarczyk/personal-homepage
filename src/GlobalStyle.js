@@ -13,6 +13,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
+  transition: color ease-in 2s;
 }
 
 button {

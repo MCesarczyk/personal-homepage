@@ -7,4 +7,5 @@ export const Container = styled.div`
     min-width: ${({ theme }) => theme.breakpoints.mobileMin};
     margin: 0 auto;
     padding: 32px;
+    transition: color 1s, background-color 1s;
 `;

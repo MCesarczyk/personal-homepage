@@ -7,7 +7,7 @@ export const TileBody = styled.div`
     background-color: ${({ theme }) => theme.color.secondaryBackground};
     border: ${({ theme }) => theme.border};
     box-shadow: ${({ theme }) => theme.shadow};
-    transition: box-shadow 1s;
+    transition: color ease-in 2s, background-color ease-in 2s, box shadow ease-in 1s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         font-size: 16px;
