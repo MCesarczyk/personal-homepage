@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.f5dc398e.chunk.js",
-    "main.js.map": "/personal-homepage/static/js/main.f5dc398e.chunk.js.map",
+    "main.js": "/personal-homepage/static/js/main.fbf46500.chunk.js",
+    "main.js.map": "/personal-homepage/static/js/main.fbf46500.chunk.js.map",
     "runtime-main.js": "/personal-homepage/static/js/runtime-main.892d1f2c.js",
     "runtime-main.js.map": "/personal-homepage/static/js/runtime-main.892d1f2c.js.map",
-    "static/js/2.25491f18.chunk.js": "/personal-homepage/static/js/2.25491f18.chunk.js",
-    "static/js/2.25491f18.chunk.js.map": "/personal-homepage/static/js/2.25491f18.chunk.js.map",
+    "static/js/2.61210d9f.chunk.js": "/personal-homepage/static/js/2.61210d9f.chunk.js",
+    "static/js/2.61210d9f.chunk.js.map": "/personal-homepage/static/js/2.61210d9f.chunk.js.map",
     "static/js/3.e2fea6d4.chunk.js": "/personal-homepage/static/js/3.e2fea6d4.chunk.js",
     "static/js/3.e2fea6d4.chunk.js.map": "/personal-homepage/static/js/3.e2fea6d4.chunk.js.map",
     "index.html": "/personal-homepage/index.html",
-    "static/js/2.25491f18.chunk.js.LICENSE.txt": "/personal-homepage/static/js/2.25491f18.chunk.js.LICENSE.txt",
+    "static/js/2.61210d9f.chunk.js.LICENSE.txt": "/personal-homepage/static/js/2.61210d9f.chunk.js.LICENSE.txt",
+    "static/media/darkMode.961c7be7.svg": "/personal-homepage/static/media/darkMode.961c7be7.svg",
     "static/media/envelopeIcon.92019248.svg": "/personal-homepage/static/media/envelopeIcon.92019248.svg",
     "static/media/facebookThumbnail.14f43e9c.svg": "/personal-homepage/static/media/facebookThumbnail.14f43e9c.svg",
     "static/media/githubLogo.571d1ccb.svg": "/personal-homepage/static/media/githubLogo.571d1ccb.svg",
     "static/media/githubThumbnail.a49c9555.svg": "/personal-homepage/static/media/githubThumbnail.a49c9555.svg",
     "static/media/instagramThumbnail.346b10a2.svg": "/personal-homepage/static/media/instagramThumbnail.346b10a2.svg",
+    "static/media/lightMode.482485d7.svg": "/personal-homepage/static/media/lightMode.482485d7.svg",
     "static/media/linkedinThumbnail.2c26b104.svg": "/personal-homepage/static/media/linkedinThumbnail.2c26b104.svg",
     "static/media/listStyleCircle.c28602c8.svg": "/personal-homepage/static/media/listStyleCircle.c28602c8.svg",
     "static/media/loaderCircle.10e6df3d.svg": "/personal-homepage/static/media/loaderCircle.10e6df3d.svg",
@@ -23,7 +25,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.892d1f2c.js",
-    "static/js/2.25491f18.chunk.js",
-    "static/js/main.f5dc398e.chunk.js"
+    "static/js/2.61210d9f.chunk.js",
+    "static/js/main.fbf46500.chunk.js"
   ]
 }
