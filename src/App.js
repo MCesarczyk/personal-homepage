@@ -12,7 +12,7 @@ import { useLocalStorageState } from "./useLocalStorageState";
 
 function App() {
   const [theme, setTheme] = useLocalStorageState("theme", lightMode);
-  
+
   const onButtonClick = () => {
     setTheme(theme === lightMode ? darkMode : lightMode)
   };
@@ -21,6 +21,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <ThemeSwitcher
+          theme={theme}
           onClick={() => onButtonClick()}
         >
           THEME

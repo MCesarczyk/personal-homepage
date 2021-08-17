@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const SwitcherButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 12px;
-    width: 48px;
+    width: 160px;
     height: 24px;
-    padding: 1px;
+    padding: 0px;
+    border: none;
+    color: ${({theme})=>theme.color.primary};
+    background-color: transparent;
     position: absolute;
     top: 40px; 
     right: 64px;
@@ -23,4 +29,10 @@ export const SwitcherButton = styled.button`
         top: 24px; 
         right: 16px;
     }
+`;
+
+export const SwitcherButtonImage = styled.img`
+    width: 60px;
+    margin-bottom: -8px;
+    fill: crimson;
 `;

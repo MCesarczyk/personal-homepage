@@ -1,8 +1,16 @@
-import { SwitcherButton } from "./styled";
+import { SwitcherButton, SwitcherButtonImage } from "./styled";
+import light from "../../../images/lightMode.svg";
+import dark from "../../../images/darkMode.svg";
+import { lightMode } from "../../../theme";
 
-const ThemeSwitcher = ({ onClick }) => {
+const ThemeSwitcher = ({ theme, onClick }) => {
+    console.log(theme);
+
     return (
-        <SwitcherButton onClick={onClick}>THEME</SwitcherButton>
+        <SwitcherButton onClick={onClick}>
+             {theme === lightMode ? "LIGHT MODE ON" : "DARK MODE ON"}
+            <SwitcherButtonImage src={theme === lightMode ? light : dark} />
+        </SwitcherButton>
     )
 };
 
