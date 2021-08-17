@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { lightMode } from "../../theme";
 
 export const FooterContainer = styled.div`
     width: 50%;
@@ -30,6 +31,7 @@ export const FooterLink = styled.a`
     font-weight: 900;
     color: ${({ theme }) => theme.color.primary};
     margin: 24px 0 24px 0;
+    transition: 1s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         margin: 21px 0 21px 0;
@@ -42,6 +44,10 @@ export const FooterLink = styled.a`
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
         margin: 12px 0 12px 0;
     }
+
+    &:hover {
+        color: ${({theme}) => theme.color.themeColor};
+    }
 `;
 
 export const FooterParagraph = styled.p`
@@ -51,6 +57,7 @@ export const FooterParagraph = styled.p`
 export const FooterLogo = styled.img`
     width: 48px;
     margin: 24px;
+    transition: 1s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         width: 42px;
@@ -66,5 +73,10 @@ export const FooterLogo = styled.img`
         width: 32px;
         margin: 16px;
 
+    }
+
+    &:hover {
+        filter: brightness(150%);
+        transform: scale(120%);
     }
 `;

@@ -7,6 +7,12 @@ export const GalleryWrapper = styled.div`
 
 export const GalleryLogo = styled.img`
     margin: 12px;
+    transition: 1s;
+
+    &:hover {
+        filter: brightness(150%);
+        transform: scale(120%);
+    }
 `;
 
 export const GalleryHeader = styled.h2`
