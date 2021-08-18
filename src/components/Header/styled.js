@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 64px;
+    margin-top: -30px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
         grid-template-columns: 1fr;

@@ -20,12 +20,12 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <ThemeSwitcher
-          theme={theme}
-          onClick={() => onButtonClick()}
-        >
-        </ThemeSwitcher>
         <Container>
+          <ThemeSwitcher
+            theme={theme}
+            onClick={() => onButtonClick()}
+          >
+          </ThemeSwitcher>
           <Header />
           <Section
             title={"My skills"}
