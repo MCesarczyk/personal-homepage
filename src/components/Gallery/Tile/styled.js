@@ -20,7 +20,7 @@ export const TileBody = styled.div`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        font-size: 12px;
+        font-size: 14px;
         padding: 24px;
     }
     

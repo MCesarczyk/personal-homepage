@@ -44,10 +44,15 @@ export const SectionList = styled.ul`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
         grid-template-columns: 1fr 1fr;
+        font-size: 16px;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
         grid-template-columns: 1fr;
+    }
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobileMax}) {
+        font-size: 14px;
     }
 `;
 
