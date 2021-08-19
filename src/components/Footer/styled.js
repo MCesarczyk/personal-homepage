@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { lightMode } from "../../theme";
 
 export const FooterContainer = styled.div`
     width: 50%;
@@ -46,7 +45,7 @@ export const FooterLink = styled.a`
     }
 
     &:hover {
-        color: ${({theme}) => theme.color.themeColor};
+        color: ${({ theme }) => theme.color.themeColor};
     }
 `;
 
@@ -54,7 +53,15 @@ export const FooterParagraph = styled.p`
         margin-bottom: 56px;
 `;
 
-export const FooterLogo = styled.img`
+export const FooterThumbnailWrapper = styled.div`
+    display: flex;
+`;
+
+export const FooterThumbnailLink = styled.a`
+    
+`;
+
+export const FooterThumbnail = styled.div`
     width: 48px;
     margin: 24px;
     transition: 1s;
@@ -76,7 +83,7 @@ export const FooterLogo = styled.img`
     }
 
     &:hover {
-        filter: brightness(150%);
-        transform: scale(120%);
+        color: ${({ theme }) => theme.color.themeColor};
+        transform: scale(110%);
     }
 `;
