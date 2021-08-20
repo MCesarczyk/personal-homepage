@@ -14,7 +14,7 @@ function App() {
   const [theme, setTheme] = useLocalStorageState("theme", lightMode);
 
   const onButtonClick = () => {
-    setTheme(theme = !theme);
+    setTheme(theme === lightMode ? darkMode : lightMode);
   };
 
   return (
