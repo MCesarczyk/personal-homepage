@@ -8,7 +8,7 @@ export const useGithubApiData = () => {
   const requestURL = 'https://api.github.com/users/MCesarczyk/repos?sort="updated"';
 
   useEffect(() => {
-    const getRates = async () => {
+    const getRepos = async () => {
       try {
         const response = await fetch(requestURL);
 
@@ -26,7 +26,7 @@ export const useGithubApiData = () => {
       }
     };
 
-    setTimeout(getRates, 2_000);
+    setTimeout(getRepos, 2_000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

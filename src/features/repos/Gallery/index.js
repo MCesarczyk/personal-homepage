@@ -5,15 +5,17 @@ import {
     GallerySubtitle, 
     GalleryLogo 
 } from "./styled";
-import { useGithubApiData } from "./useGithubApiData";
+import { useGithubApiData } from "../useGithubApiData";
 import Tile from "./Tile";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
-import logo from "../../images/githubLogo.svg";
+import logo from "../../../images/githubLogo.svg";
 
 const Gallery = ({ title, subtitle }) => {
     const repos = useGithubApiData();
     const status = repos.status;
+
+    console.log(repos);
 
     return (
         <GalleryWrapper>
@@ -26,7 +28,7 @@ const Gallery = ({ title, subtitle }) => {
             </GallerySubtitle>
             {status === "loading" && <Loader />}
             {status === "error" && <ErrorMessage />}
-            {<GalleryTilesContainer>
+            {repos && <GalleryTilesContainer>
                 {repos.map((repo) => (
                     <Tile
                         key={repo.id}
