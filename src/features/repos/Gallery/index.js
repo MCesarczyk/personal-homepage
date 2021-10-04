@@ -18,8 +18,6 @@ const Gallery = ({ title, subtitle }) => {
     const repos = useSelector(selectRepos);
     const status = useSelector(selectState);
 
-    console.log(repos);
-
     return (
         <GalleryWrapper>
             <GalleryLogo src={logo} alt="Github logo"></GalleryLogo>
