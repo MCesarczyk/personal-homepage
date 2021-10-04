@@ -7,9 +7,9 @@ const initialState = {
 const themeSlice = createSlice({
     name: 'theme',
     initialState,
-    reducer: {
-        setTheme: (state) => {
-            state.isThemeDark = !state.isThemeDark;
+    reducers: {
+        setTheme: (state, {payload: newState}) => {
+            state.isThemeDark = newState;
         },
     },
 });
