@@ -3,7 +3,7 @@ import { Container } from "./common/Container";
 import ThemeSwitcher from "./features/themes/ThemeSwitcher";
 import Header from "./components/Header";
 import Section from "./components/Section";
-import Gallery from "./components/Gallery";
+import Gallery from "./features/repos/Gallery";
 import Footer from "./components/Footer";
 import skills from "./skills";
 import goals from "./goals";
