@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import skills from "./skills";
 import goals from "./goals";
 import { lightMode, darkMode } from './theme';
-import { useLocalStorageState } from "./useLocalStorageState";
 import { useSelector } from "react-redux";
 import { selectTheme } from "./features/themes/themeSlice";
 
@@ -16,7 +15,7 @@ function App() {
   const isThemeDark = useSelector(selectTheme);
   console.log(isThemeDark);
 
-  const theme = darkMode;
+  const theme = isThemeDark ? darkMode : lightMode;
 
   return (
     <>
