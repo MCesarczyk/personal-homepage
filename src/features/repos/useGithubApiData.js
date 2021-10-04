@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setRepos, setState } from "./reposSlice";
 
 export const useGithubApiData = () => {
-  const [repos, setRepos] = useState({
-    status: "loading"
-  });
-
   const requestURL = 'https://api.github.com/users/MCesarczyk/repos?sort="updated"';
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
+    dispatch(setState("loading"));
     const getRepos = async () => {
       try {
         const response = await fetch(requestURL);
@@ -17,11 +18,11 @@ export const useGithubApiData = () => {
         }
 
         const apiResponse = await response.json();
-
-        setRepos(apiResponse);
+        dispatch(setRepos(apiResponse));
+        dispatch(setState("success"));
 
       } catch (error) {
-        setRepos({ status: "error" });
+        dispatch(setState("error"));
         console.log(error.message);
       }
     };
@@ -29,6 +30,4 @@ export const useGithubApiData = () => {
     setTimeout(getRepos, 2_000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  return repos;
 };
