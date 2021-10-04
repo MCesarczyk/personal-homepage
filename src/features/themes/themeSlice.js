@@ -8,6 +8,7 @@ const themeSlice = createSlice({
     name: 'theme',
     initialState,
     reducers: {
+        fetchThemeState: ( ) => { },
         setTheme: (state, {payload: newState}) => {
             state.isThemeDark = newState;
         },
@@ -15,6 +16,7 @@ const themeSlice = createSlice({
 });
 
 export const {
+    fetchThemeState,
     setTheme,
 } = themeSlice.actions;
 
