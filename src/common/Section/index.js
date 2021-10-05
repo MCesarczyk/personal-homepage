@@ -8,12 +8,10 @@ const Section = ({ title, elements }) => (
         </SectionHeader>
         <SectionList >
             {elements.map((element) => (
-                <>
-                    <SectionListItem key={element} >
+                    <SectionListItem key={element}>
                         <SectionListItemImage src={circle} />
                         {element}
                     </SectionListItem>
-                </>
             ))}
         </SectionList>
     </StyledSection>
