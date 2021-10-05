@@ -5,16 +5,21 @@ import {
     GallerySubtitle,
     GalleryLogo
 } from "./styled";
-import { useGithubApiData } from "../useGithubApiData";
 import Tile from "./Tile";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
 import logo from "../../../images/githubLogo.svg";
-import { useSelector } from "react-redux";
-import { selectRepos, selectState } from "../reposSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchReposData, selectRepos, selectState } from "../reposSlice";
+import { useEffect } from "react";
 
 const Gallery = ({ title, subtitle }) => {
-    useGithubApiData();
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchReposData());
+    }, []);
+    
     const repos = useSelector(selectRepos);
     const status = useSelector(selectState);
 

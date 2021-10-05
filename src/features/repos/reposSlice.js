@@ -9,6 +9,7 @@ const reposSlice = createSlice({
     name: 'repos',
     initialState,
     reducers: {
+        fetchReposData: () => {},
         setRepos: (state, {payload: newRepos}) => {
             state.repos = newRepos;
         },
@@ -19,6 +20,7 @@ const reposSlice = createSlice({
 });
 
 export const {
+    fetchReposData,
     setRepos,
     setState,
 } = reposSlice.actions;

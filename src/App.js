@@ -8,10 +8,17 @@ import Footer from "./components/Footer";
 import skills from "./skills";
 import goals from "./goals";
 import { lightMode, darkMode } from './theme';
-import { useSelector } from "react-redux";
-import { selectTheme } from "./features/themes/themeSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchThemeState, selectTheme } from "./features/themes/themeSlice";
+import { useEffect } from "react";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchThemeState());
+  }, []);
+
   const isThemeDark = useSelector(selectTheme);
   console.log(isThemeDark);
 
