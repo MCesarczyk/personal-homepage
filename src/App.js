@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchThemeState());
-  }, []);
+  }, [dispatch]);
 
   const isThemeDark = useSelector(selectTheme);
 

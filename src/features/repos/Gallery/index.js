@@ -18,7 +18,7 @@ const Gallery = ({ title, subtitle }) => {
 
     useEffect(() => {
         dispatch(fetchReposData());
-    }, []);
+    }, [dispatch]);
     
     const repos = useSelector(selectRepos);
     const status = useSelector(selectState);
@@ -37,7 +37,7 @@ const Gallery = ({ title, subtitle }) => {
             {status === "success" && repos && <GalleryTilesContainer>
                 {repos.map((repo) => (
                     <Tile
-                        key={repo.id}
+                        key={repo.name}
                         title={repo.name || "n/a"}
                         description={repo.description || "n/a"}
                         demoLink={repo.homepage || "n/a"}

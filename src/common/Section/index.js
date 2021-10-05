@@ -2,11 +2,11 @@ import { StyledSection, SectionHeader, SectionList, SectionListItemImage, Sectio
 import circle from "../../images/listStyleCircle.svg";
 
 const Section = ({ title, elements }) => (
-    <StyledSection>
-        <SectionHeader>
+    <StyledSection >
+        <SectionHeader >
             {title}
         </SectionHeader>
-        <SectionList>
+        <SectionList >
             {elements.map((element) => (
                 <>
                     <SectionListItem key={element} >
