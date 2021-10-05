@@ -1,12 +1,19 @@
-import { call, put, takeLatest } from "@redux-saga/core/effects";
-import { fetchLocalStorageData } from "./fetchLocalStorageData";
-import { fetchThemeState, setTheme } from "./themeSlice";
+import { call, put, select, takeLatest } from "@redux-saga/core/effects";
+import { fetchLocalStorageState } from "./fetchLocalStorageState";
+import { saveLocalStorageState } from "./saveLocalStorageState";
+import { fetchThemeState, selectTheme, setTheme } from "./themeSlice";
 
 function* fetchThemeStateHandler() {
-    const theme = yield call(fetchLocalStorageData, "theme", "lightMode");
-    console.log(theme);
+    const isThemeDark = yield call(fetchLocalStorageState, "isThemeDark", false);
+    yield put(setTheme(isThemeDark));
+};
+
+function* saveThemeStateHandler() {
+    const isThemeDark = yield select(selectTheme);
+    yield call(saveLocalStorageState, "isThemeDark", isThemeDark);
 };
 
 export function* themeSaga() {
     yield takeLatest(fetchThemeState.type, fetchThemeStateHandler);
+    yield takeLatest(setTheme.type, saveThemeStateHandler);
 };

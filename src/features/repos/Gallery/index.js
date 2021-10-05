@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {
     GalleryWrapper,
     GalleryHeader,
@@ -9,9 +11,7 @@ import Tile from "./Tile";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
 import logo from "../../../images/githubLogo.svg";
-import { useDispatch, useSelector } from "react-redux";
 import { fetchReposData, selectRepos, selectState } from "../reposSlice";
-import { useEffect } from "react";
 
 const Gallery = ({ title, subtitle }) => {
     const dispatch = useDispatch();

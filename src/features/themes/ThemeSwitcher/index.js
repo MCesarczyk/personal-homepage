@@ -1,9 +1,8 @@
+import { useDispatch, useSelector } from "react-redux";
+import { selectTheme, setTheme } from "../themeSlice";
 import { SwitcherButton, SwitcherButtonImage, SwitcherCaption } from "./styled";
 import light from "../../../images/lightMode.svg";
 import dark from "../../../images/darkMode.svg";
-import { lightMode } from "../../../theme";
-import { useDispatch, useSelector } from "react-redux";
-import { selectTheme, setTheme } from "../themeSlice";
 
 const ThemeSwitcher = () => {
     const isThemeDark = useSelector(selectTheme);

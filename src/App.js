@@ -20,7 +20,6 @@ function App() {
   }, []);
 
   const isThemeDark = useSelector(selectTheme);
-  console.log(isThemeDark);
 
   const theme = isThemeDark ? darkMode : lightMode;
 
