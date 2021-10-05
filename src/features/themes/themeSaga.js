@@ -1,6 +1,6 @@
 import { call, put, select, takeLatest } from "@redux-saga/core/effects";
-import { fetchLocalStorageState } from "./fetchLocalStorageState";
-import { saveLocalStorageState } from "./saveLocalStorageState";
+import { fetchLocalStorageState } from "../../utils/fetchLocalStorageState";
+import { saveLocalStorageState } from "../../utils/saveLocalStorageState";
 import { fetchThemeState, selectTheme, setTheme } from "./themeSlice";
 
 function* fetchThemeStateHandler() {

@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { fetchLocalStorageState } from "../../utils/fetchLocalStorageState";
 
 const initialState = {
-    isThemeDark: false,
+    isThemeDark: null,
 };
 
 const themeSlice = createSlice({

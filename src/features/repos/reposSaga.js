@@ -1,6 +1,6 @@
 import { call, delay, put, takeLatest } from "@redux-saga/core/effects";
 import { fetchReposData, setRepos, setState } from "../repos/reposSlice";
-import { fetchAPIData } from "./fetchAPIData";
+import { fetchAPIData } from "../../utils/fetchAPIData";
 
 function* fetchReposDataHandler() {
     try {
