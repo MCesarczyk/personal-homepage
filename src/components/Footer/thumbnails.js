@@ -7,7 +7,7 @@ import {
     GITHUB_ADRESS,
     INSTAGRAM_ADRESS,
     LINKEDIN_ADRESS
-} from "../../assets/datas/adresses";
+} from "../../assets/data/adresses";
 
 export const thumbnails = [
     {
