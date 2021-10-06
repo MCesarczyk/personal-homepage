@@ -1,4 +1,12 @@
-import { FooterContainer, FooterHeader, FooterLink, FooterParagraph, FooterThumbnail, FooterThumbnailLink, FooterThumbnailWrapper } from "./styled";
+import {
+    FooterContainer,
+    FooterHeader,
+    FooterLink,
+    FooterParagraph,
+    FooterThumbnail,
+    FooterThumbnailLink,
+    FooterThumbnailWrapper
+} from "./styled";
 import { Caption } from "../../common/Caption";
 import { thumbnails } from "./thumbnails";
 import { MAIL_ADRESS } from "../../assets/data/adresses";
