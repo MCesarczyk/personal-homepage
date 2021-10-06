@@ -1,6 +1,6 @@
 import { ErrorCaption, ErrorHeader, WarningSignWrapper } from "./styled";
 import { Button } from "../../../../common/Button";
-import { ReactComponent as WarningSign } from "../../../../images/warningSign.svg";
+import { ReactComponent as WarningSign } from "../../../../assets/images/warningSign.svg";
 
 const ErrorMessage = () => (
     <>

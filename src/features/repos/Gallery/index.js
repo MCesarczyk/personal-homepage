@@ -2,7 +2,7 @@ import { GalleryWrapper, GalleryHeader, GalleryTilesContainer, GallerySubtitle, 
 import Tile from "./Tile";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
-import logo from "../../../images/githubLogo.svg";
+import logo from "../../../assets/images/githubLogo.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchReposData, selectRepos, selectState } from "../reposSlice";
 import { useEffect } from "react";
