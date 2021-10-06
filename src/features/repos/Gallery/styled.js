@@ -5,7 +5,13 @@ export const GalleryWrapper = styled.div`
     margin-bottom: 120px;
 `;
 
-export const GalleryLogo = styled.img`
+export const GalleryLogoWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+`;
+
+export const GalleryLogo = styled.div`
+    width: 40px;
     margin: 12px;
     transition: 1s;
 

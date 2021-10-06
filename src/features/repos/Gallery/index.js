@@ -1,8 +1,15 @@
-import { GalleryWrapper, GalleryHeader, GalleryTilesContainer, GallerySubtitle, GalleryLogo } from "./styled";
+import {
+    GalleryWrapper,
+    GalleryHeader,
+    GalleryTilesContainer,
+    GallerySubtitle,
+    GalleryLogo,
+    GalleryLogoWrapper,
+} from "./styled";
 import Tile from "./Tile";
 import Loader from "./Loader";
 import ErrorMessage from "./ErrorMessage";
-import logo from "../../../assets/images/githubLogo.svg";
+import { ReactComponent as GithubLogo } from "../../../assets/images/githubLogo.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchReposData, selectRepos, selectState } from "../reposSlice";
 import { useEffect } from "react";
@@ -18,7 +25,11 @@ const Gallery = ({ title, subtitle }) => {
 
     return (
         <GalleryWrapper>
-            <GalleryLogo src={logo} alt="Github logo"></GalleryLogo>
+            <GalleryLogoWrapper>
+                <GalleryLogo>
+                    <GithubLogo />
+                </GalleryLogo>
+            </GalleryLogoWrapper>
             <GalleryHeader>
                 {title}
             </GalleryHeader>
