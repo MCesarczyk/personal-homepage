@@ -2,30 +2,32 @@ import { ThemeProvider } from "styled-components";
 import { Container } from "./common/Container";
 import ThemeSwitcher from "./features/themes/ThemeSwitcher";
 import Header from "./components/Header";
-import Section from "./components/Section";
-import Gallery from "./components/Gallery";
+import Section from "./common/Section";
+import Gallery from "./features/repos/Gallery";
 import Footer from "./components/Footer";
 import skills from "./skills";
 import goals from "./goals";
 import { lightMode, darkMode } from './theme';
-import { useLocalStorageState } from "./useLocalStorageState";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchThemeState, selectTheme } from "./features/themes/themeSlice";
+import { useEffect } from "react";
 
 function App() {
-  const [theme, setTheme] = useLocalStorageState("theme", lightMode);
+  const dispatch = useDispatch();
 
-  const onButtonClick = () => {
-    setTheme(theme === lightMode ? darkMode : lightMode);
-  };
+  useEffect(() => {
+    dispatch(fetchThemeState());
+  }, [dispatch]);
+
+  const isThemeDark = useSelector(selectTheme);
+
+  const theme = isThemeDark ? darkMode : lightMode;
 
   return (
     <>
       <ThemeProvider theme={theme}>
         <Container>
-          <ThemeSwitcher
-            theme={theme}
-            onClick={() => onButtonClick()}
-          >
-          </ThemeSwitcher>
+          <ThemeSwitcher />
           <Header />
           <Section
             title={"My skills"}
