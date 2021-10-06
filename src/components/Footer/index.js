@@ -1,6 +1,7 @@
 import { FooterContainer, FooterHeader, FooterLink, FooterParagraph, FooterThumbnail, FooterThumbnailLink, FooterThumbnailWrapper } from "./styled";
 import { Caption } from "../../common/Caption";
 import { thumbnails } from "./thumbnails";
+import { MAIL_ADRESS } from "../../assets/datas/adresses";
 
 const Footer = () => (
     <FooterContainer>
@@ -8,8 +9,8 @@ const Footer = () => (
             <Caption>
                 CONTACT:
             </Caption>
-            <FooterLink id="contact" href="mailto:michal.cesarczyk@gmail.com">
-                michal.cesarczyk@gmail.com
+            <FooterLink id="contact" href={`mailto:${MAIL_ADRESS}`}>
+                {MAIL_ADRESS}
             </FooterLink>
         </FooterHeader>
         <FooterParagraph>
