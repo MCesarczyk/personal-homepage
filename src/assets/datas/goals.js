@@ -1,9 +1,9 @@
 export const goals = [
     "TypeScript",
-    "Node.js(backend)",
     "JS classes",
-    "Java",
     "Ruby on rails",
+    "Node.js",
+    "Java",
     "Angular"
 ]
 

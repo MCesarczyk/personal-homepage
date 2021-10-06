@@ -1,10 +1,12 @@
-import { ErrorCaption, ErrorHeader, ErrorSign } from "./styled";
+import { ErrorCaption, ErrorHeader, WarningSignWrapper } from "./styled";
 import { Button } from "../../../../common/Button";
-import sign from "../../../../images/warningSign.svg";
+import { ReactComponent as WarningSign } from "../../../../assets/images/warningSign.svg";
 
 const ErrorMessage = () => (
     <>
-        <ErrorSign src={sign}></ErrorSign>
+        <WarningSignWrapper>
+            <WarningSign />
+        </WarningSignWrapper>
         <ErrorHeader>
             Ooops! Data loading failed...
         </ErrorHeader>

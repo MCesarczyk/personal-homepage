@@ -1,5 +1,5 @@
 import { StyledSection, SectionHeader, SectionList, SectionListItemImage, SectionListItem } from "./styled";
-import circle from "../../images/listStyleCircle.svg";
+import circle from "../../assets/images/listStyleCircle.svg";
 
 const Section = ({ title, elements }) => (
     <StyledSection >

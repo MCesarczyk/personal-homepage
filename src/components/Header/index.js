@@ -1,8 +1,8 @@
 import { HeaderButtonIcon, HeaderContainer, HeaderImage, HeaderParagraph, HeaderTitle } from "./styled";
 import { Caption } from "../../common/Caption";
 import { Button } from "../../common/Button";
-import photo from "../../images/portrait.png";
-import icon from "../../images/envelopeIcon.svg";
+import photo from "../../assets/images/portrait.png";
+import icon from "../../assets/images/envelopeIcon.svg";
 
 const Header = () => (
     <HeaderContainer>

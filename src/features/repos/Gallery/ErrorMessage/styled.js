@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ErrorSign = styled.img`
+export const WarningSignWrapper = styled.div`
     margin-top: 96px;
     margin-bottom: 24px;
 `;

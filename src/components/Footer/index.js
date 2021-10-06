@@ -1,8 +1,8 @@
 import { FooterContainer, FooterHeader, FooterLink, FooterParagraph, FooterThumbnail, FooterThumbnailLink, FooterThumbnailWrapper } from "./styled";
-import { ReactComponent as GithubThumbnail } from "../../images/githubThumbnail.svg";
-import { ReactComponent as FacebookThumbnail } from "../../images/facebookThumbnail.svg";
-import { ReactComponent as LinkedinThumbnail } from "../../images/linkedinThumbnail.svg";
-import { ReactComponent as InstagramThumbnail } from "../../images/instagramThumbnail.svg";
+import { ReactComponent as GithubThumbnail } from "../../assets/images/githubThumbnail.svg";
+import { ReactComponent as FacebookThumbnail } from "../../assets/images/facebookThumbnail.svg";
+import { ReactComponent as LinkedinThumbnail } from "../../assets/images/linkedinThumbnail.svg";
+import { ReactComponent as InstagramThumbnail } from "../../assets/images/instagramThumbnail.svg";
 import { Caption } from "../../common/Caption";
 
 const Footer = () => (
