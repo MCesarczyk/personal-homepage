@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+:focus {
+  outline-offset: 8px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -18,7 +22,8 @@ body {
 
 button {
   cursor: pointer;
-};
+  display: block;
+}
 
 ul, ol {
   list-style: none;
@@ -27,4 +32,4 @@ ul, ol {
 a {
   text-decoration: none;
   color: currentColor;
-}`;
+}`
