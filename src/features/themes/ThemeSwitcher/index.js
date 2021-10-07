@@ -1,8 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectTheme, setTheme } from "../themeSlice";
-import { SwitcherButton, SwitcherButtonImage, SwitcherButtonWrapper, SwitcherCaption } from "./styled";
-import light from "../../../assets/images/lightMode.svg";
-import dark from "../../../assets/images/darkMode.svg";
+import { 
+    SwitcherButton, 
+    SwitcherButtonWrapper, 
+    SwitcherCaption, 
+    SwitcherIcon, 
+    SwitcherIconWrapper 
+} from "./styled";
+import { ReactComponent as SunIcon } from "../../../assets/images/sun.svg";
 
 const ThemeSwitcher = () => {
     const isThemeDark = useSelector(selectTheme);
@@ -17,11 +22,13 @@ const ThemeSwitcher = () => {
         <SwitcherButtonWrapper>
             <SwitcherButton onClick={onThemeSwitch}>
                 <SwitcherCaption>
-                    {isThemeDark ? "DARK MODE ON" : "LIGHT MODE ON"}
+                    {`${isThemeDark ? "DARK" : "LIGHT"}`}&nbsp;MODE&nbsp;ON
                 </SwitcherCaption>
-                <SwitcherButtonImage
-                    src={isThemeDark ? dark : light}
-                />
+                <SwitcherIconWrapper >
+                    <SwitcherIcon shifted={isThemeDark}>
+                        <SunIcon />
+                    </SwitcherIcon>
+                </SwitcherIconWrapper>
             </SwitcherButton>
         </SwitcherButtonWrapper>
     )
