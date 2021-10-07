@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const SwitcherCaption = styled.div`
-    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        display: none;
-    }
+export const SwitcherButtonWrapper = styled.div`
+    display: flex;
+    justify-content: flex-end;
 `;
 
 export const SwitcherButton = styled.button`
@@ -12,7 +11,6 @@ export const SwitcherButton = styled.button`
     justify-content: flex-end;
     gap: 12px;
     font-size: 12px;
-    width: 100%;
     height: 24px;
     padding: 0px;
     border: none;
@@ -20,8 +18,13 @@ export const SwitcherButton = styled.button`
     background-color: transparent;
 `;
 
+export const SwitcherCaption = styled.div`
+    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+        display: none;
+    }
+`;
+
 export const SwitcherButtonImage = styled.img`
     width: 60px;
     margin-bottom: -8px;
-    fill: crimson;
 `;
