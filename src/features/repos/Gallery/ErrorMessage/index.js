@@ -1,6 +1,7 @@
 import { ErrorCaption, ErrorHeader, WarningSignWrapper } from "./styled";
 import { Button } from "../../../../common/Button";
 import { ReactComponent as WarningSign } from "../../../../assets/images/warningSign.svg";
+import { GITHUB_ADRESS } from "../../../../assets/data/adresses";
 
 const ErrorMessage = () => (
     <>
@@ -15,7 +16,7 @@ const ErrorMessage = () => (
             You can check my projects directly on a Github website.
         </ErrorCaption>
         <Button>
-            <a href="https://github.com/MCesarczyk" target="_blank" rel="noreferrer" >
+            <a href={GITHUB_ADRESS} target="_blank" rel="noreferrer" >
                 Go to Github
             </a>
         </Button>

@@ -20,7 +20,7 @@ export const SwitcherButton = styled.button`
 `;
 
 export const SwitcherCaption = styled.span`
-    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
         display: none;
     }
 `;

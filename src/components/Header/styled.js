@@ -23,16 +23,9 @@ export const HeaderInnerContainer = styled.div`
 export const HeaderImage = styled.img`
     width: 400px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
-        width: 340px;
-    }
-
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        width: 280px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        width: 132px;
+        min-width: 132px;
+    width: 50%;
     }
 `;
 
@@ -55,29 +48,19 @@ export const HeaderTitle = styled.h1`
 
 export const HeaderParagraph = styled.p`
     margin-bottom: 32px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        font-size: 17px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        font-size: 17px;
-    }
 `;
 
-export const HeaderButtonIcon = styled.img`
-    height: 18px;
-    margin-bottom: -2px;
+export const HeaderButtonIcon = styled.div`
+    width: 22px;
     margin-right: 18px;
-    text-align: center;
-
+    
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        height: 16px;
+        width: 20px;
         margin-right: 16px;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        height: 14px;
+        width: 18px;
         margin-right: 14px;
     }
 `;
