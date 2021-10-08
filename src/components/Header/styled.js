@@ -23,16 +23,9 @@ export const HeaderInnerContainer = styled.div`
 export const HeaderImage = styled.img`
     width: 400px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.netbookMax}) {
-        width: 340px;
-    }
-
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        width: 280px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        width: 132px;
+        min-width: 132px;
+    width: 50%;
     }
 `;
 
@@ -57,7 +50,7 @@ export const HeaderParagraph = styled.p`
     margin-bottom: 32px;
 `;
 
-export const HeaderButtonIcon = styled.img`
+export const HeaderButtonIcon = styled.div`
     height: 18px;
     margin-bottom: -2px;
     margin-right: 18px;
