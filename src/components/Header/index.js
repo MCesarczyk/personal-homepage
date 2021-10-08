@@ -2,7 +2,7 @@ import { HeaderButtonIcon, HeaderContainer, HeaderImage, HeaderParagraph, Header
 import { Caption } from "../../common/Caption";
 import { Button } from "../../common/Button";
 import photo from "../../assets/images/portrait.png";
-import icon from "../../assets/images/envelopeIcon.svg";
+import { ReactComponent as EnvelopeIcon } from "../../assets/images/envelopeIcon.svg";
 
 const Header = () => (
     <HeaderContainer>
@@ -15,11 +15,11 @@ const Header = () => (
             <HeaderParagraph>
                 Experienced mechanical engineer and CNC programmer who's just becoming a frontend developer.
             </HeaderParagraph>
-            <Button>
-                <a href="#contact" >
-                    <HeaderButtonIcon src={icon} />
-                    Contact
-                </a>
+            <Button href="#contact">
+                <HeaderButtonIcon>
+                    <EnvelopeIcon />
+                </HeaderButtonIcon>
+                Contact
             </Button>
         </div>
     </HeaderContainer>
