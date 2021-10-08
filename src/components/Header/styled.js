@@ -55,14 +55,6 @@ export const HeaderTitle = styled.h1`
 
 export const HeaderParagraph = styled.p`
     margin-bottom: 32px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        font-size: 17px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        font-size: 17px;
-    }
 `;
 
 export const HeaderButtonIcon = styled.img`
