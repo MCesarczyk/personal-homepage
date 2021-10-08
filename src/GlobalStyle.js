@@ -17,7 +17,13 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
-  transition: color ease-in 2s;
+  transition: color ease-in 0.25s;
+  background-color: ${({ theme }) => theme.color.background};
+  color: ${({ theme }) => theme.color.primary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        font-size: 14px;
+    }
 }
 
 button {
