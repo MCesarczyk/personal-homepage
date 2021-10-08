@@ -51,18 +51,16 @@ export const HeaderParagraph = styled.p`
 `;
 
 export const HeaderButtonIcon = styled.div`
-    height: 18px;
-    margin-bottom: -2px;
+    width: 22px;
     margin-right: 18px;
-    text-align: center;
-
+    
     @media (max-width: ${({ theme }) => theme.breakpoints.tabletMax}) {
-        height: 16px;
+        width: 20px;
         margin-right: 16px;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        height: 14px;
+        width: 18px;
         margin-right: 14px;
     }
 `;

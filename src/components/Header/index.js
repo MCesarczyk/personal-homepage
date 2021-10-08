@@ -17,7 +17,7 @@ const Header = () => (
             </HeaderParagraph>
             <Button href="#contact">
                 <HeaderButtonIcon>
-                    <EnvelopeIcon />
+                    <EnvelopeIcon width="100%" />
                 </HeaderButtonIcon>
                 Contact
             </Button>
