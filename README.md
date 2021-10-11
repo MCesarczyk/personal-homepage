@@ -1,6 +1,44 @@
 # This is my personal homepage
 
-The page is to summarize my achievements so far, show my future plans and simply make contact with me easier 😊
+The page is to summarize my achievements so far, show my future plans and simply make contact with me easier 😊  
+The page contains brief informations about my skills, my planned direction of development and my portfolio confains of GitHub repositories.
+
+![preview in light mode](./src/assets/images/readme/demo_light.gif)
+
+You can obviously switch to dark mode if you want to:
+
+![theme switching](./src/assets/images/readme/theme_switching.gif)
+
+The app will change theme. Moreover, your preferences will be saved in local storage, so next time you'll be visiting my page, it will be displayed of remembered theme of your choice 😉
+
+![preview in dark mode](./src/assets/images/readme/demo_dark.gif)
+
+After loading a page you can see loading animation for a while and then list of my public repositories will be listed. You can browse the repositories or check deployed versions of all of them, by clicking on proper link.
+
+![loading repositories list](./src/assets/images/readme/repos_light.gif)
+
+In case of any loading issues, you'll get proper information and would check my repositories later using attached link:
+
+![error handling](./src/assets/images/readme/error_dark.gif)
+
+To get in touch with me, just click on blue button or simply scroll to the bottom of page, where you can find email address and some socials thumbnails of mine:
+
+![getting in touch](./src/assets/images/readme/contact_light.gif)
+
+## The app contains such technologies as:
+- Responsive web design
+- CSS-Flexbox
+- CSS-Grid
+- JS/ES6+ features
+- Error handling
+- Promises, Async/Await
+- AJAX/API/LocalStorage
+- React 17 features
+- Styled components
+- React/custom Hooks
+- React-Redux
+- Redux-Saga
+- React Router
 
 ## Demo: 
 
