@@ -1,4 +1,4 @@
-# This is my personal homepage ![rocket icon](./src/assets/images/tool-box/rocket.svg)
+# This is my personal homepage ![rocket icon](./src/assets/images/readme/home-199.svg)
 
 The page is to summarize my achievements so far, show my future plans and simply make contact with me easier 😊  
 The page contains brief informations about my skills, my planned direction of development and my portfolio confains of GitHub repositories.
@@ -25,7 +25,10 @@ To get in touch with me, just click on blue button or simply scroll to the botto
 
 ![getting in touch](./src/assets/images/readme/contact_light.gif)
 
-## The app contains such technologies as:
+***
+***
+
+## The app contains such technologies as: ![rocket icon](./src/assets/images/readme/tool-box.svg)
 - Responsive web design
 - CSS-Flexbox
 - CSS-Grid
@@ -40,17 +43,18 @@ To get in touch with me, just click on blue button or simply scroll to the botto
 - Redux-Saga
 - React Router
 
-***********
+***
+***
 ## Demo: 
 
 https://mcesarczyk.github.io/personal-homepage/
 ![rocket icon](./src/assets/images/readme/rocket.svg)
 
-******
+***
 
 _____________________
 
-## Getting Started with Create React App
+## Getting Started with Create React App ![rocket icon](./src/assets/images/readme/hammer-and-screwdriver.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
