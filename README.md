@@ -1,4 +1,4 @@
-# This is my personal homepage
+# This is my personal homepage ![rocket icon](./src/assets/images/tool-box/rocket.svg)
 
 The page is to summarize my achievements so far, show my future plans and simply make contact with me easier 😊  
 The page contains brief informations about my skills, my planned direction of development and my portfolio confains of GitHub repositories.
@@ -40,9 +40,13 @@ To get in touch with me, just click on blue button or simply scroll to the botto
 - Redux-Saga
 - React Router
 
+***********
 ## Demo: 
 
 https://mcesarczyk.github.io/personal-homepage/
+![rocket icon](./src/assets/images/readme/rocket.svg)
+
+******
 
 _____________________
 
