@@ -17,7 +17,6 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
-  transition: color ease-in 1s;
   background-color: ${({ theme }) => theme.color.background};
   color: ${({ theme }) => theme.color.primary};
 

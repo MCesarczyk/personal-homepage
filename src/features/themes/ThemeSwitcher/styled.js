@@ -36,7 +36,7 @@ export const SwitcherIconWrapper = styled.div`
 
 export const SwitcherIcon = styled.div`
     width: 50%;
-    transition: 1s;
+    transition: 0.3s;
 
     ${({ shifted }) => shifted && css`
         transform: translateX(24px);
