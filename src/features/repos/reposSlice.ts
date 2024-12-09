@@ -1,9 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
+import { Repo } from "./types";
 
-const initialState = {
+type State = "idle" | "loading" | "success" | "error";
+
+interface ReposState {
+    repos: Repo[];
+    state: State;
+}
+
+const initialState: ReposState = {
     repos: [],
-    state: "idle",
+    state: "idle" as State,
 };
 
 const reposSlice = createSlice({
@@ -26,7 +34,7 @@ export const {
     setState,
 } = reposSlice.actions;
 
-export const selectRepos = (state: RootState) => state.repos.repos;
-export const selectState = (state: RootState) => state.repos.state;
+export const selectRepos = (state: RootState): Repo[] => state.repos.repos;
+export const selectState = (state: RootState): State => state.repos.state;
 
 export default reposSlice.reducer;

@@ -1,4 +1,3 @@
-import { useDispatch, useSelector } from "react-redux";
 import { selectTheme, setTheme } from "../themeSlice";
 import {
   SwitcherButton,
@@ -8,11 +7,12 @@ import {
   SwitcherIconWrapper,
 } from "./styled";
 import { ReactComponent as SunIcon } from "../../../assets/images/sun.svg";
+import { useAppDispatch, useAppSelector } from "../../../hooks";
 
 const ThemeSwitcher = () => {
-  const isThemeDark = useSelector(selectTheme);
+  const isThemeDark = useAppSelector(selectTheme);
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const onThemeSwitch = () => {
     dispatch(setTheme(!isThemeDark));

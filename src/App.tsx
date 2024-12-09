@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Normalize } from "styled-normalize";
-import { useDispatch, useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import { lightMode, darkMode } from './theme';
 import { GlobalStyle } from "./GlobalStyle";
@@ -13,15 +12,16 @@ import goals from "./assets/data/goals";
 import Gallery from "./features/repos/Gallery";
 import ThemeSwitcher from "./features/themes/ThemeSwitcher";
 import { fetchThemeState, selectTheme } from "./features/themes/themeSlice";
+import { useAppDispatch, useAppSelector } from "./hooks";
 
 function App() {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(fetchThemeState());
   }, [dispatch]);
 
-  const isThemeDark = useSelector(selectTheme);
+  const isThemeDark = useAppSelector(selectTheme);
 
   const theme = isThemeDark ? darkMode : lightMode;
 

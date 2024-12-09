@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import {
   GalleryWrapper,
   GalleryHeader,
@@ -14,6 +13,7 @@ import ErrorMessage from "./ErrorMessage";
 import { ReactComponent as GithubLogo } from "../../../assets/images/githubLogo.svg";
 import { fetchReposData, selectRepos, selectState } from "../reposSlice";
 import { Repo } from "../types";
+import { useAppDispatch, useAppSelector } from "../../../hooks";
 
 interface Props {
   title: string;
@@ -21,9 +21,9 @@ interface Props {
 }
 
 const Gallery = ({ title, subtitle }: Props) => {
-  const repos = useSelector(selectRepos);
-  const status = useSelector(selectState);
-  const dispatch = useDispatch();
+  const repos = useAppSelector(selectRepos);
+  const status = useAppSelector(selectState);
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(fetchReposData());
