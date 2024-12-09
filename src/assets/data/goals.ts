@@ -1,10 +1,10 @@
 export const goals = [
-    "TypeScript",
-    "Ruby on rails",
-    "PostrgreSQL",
-    "Heroku",
-    "Fullstack app deployment",
-    "Node.js",
+    "Angular",
+    "PWA",
+    "Remix",
+    "Svelte",
+    "Rust",
+    "React Native",
 ]
 
 export default goals;
