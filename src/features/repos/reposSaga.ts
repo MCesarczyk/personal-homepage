@@ -6,7 +6,7 @@ import { SagaIterator } from "@redux-saga/core";
 function* fetchReposDataHandler(): SagaIterator<void> {
     try {
         yield put(setState("loading"));
-        const apiURL = 'https://api.github.com/users/MCesarczyk/repos?sort="updated"';
+        const apiURL = `${process.env.REACT_APP_GITHUB_ACCOUNT_URL}/repos?sort="updated"`;
         const repos = yield call(fetchAPIData, apiURL);
         yield put(setRepos(repos));
         yield delay(2_000);
