@@ -1,0 +1,21 @@
+import { call, delay, put, takeLatest } from "@redux-saga/core/effects";
+import { fetchReposData, setRepos, setState } from "./reposSlice";
+import { fetchAPIData } from "../../utils/fetchAPIData";
+import { SagaIterator } from "@redux-saga/core";
+
+function* fetchReposDataHandler(): SagaIterator<void> {
+    try {
+        yield put(setState("loading"));
+        const apiURL = `${process.env.REACT_APP_GITHUB_ACCOUNT_URL}/repos?sort="updated"`;
+        const repos = yield call(fetchAPIData, apiURL);
+        yield put(setRepos(repos));
+        yield delay(2_000);
+        yield put(setState("success"));
+    } catch {
+        yield put(setState("error"));
+    }
+};
+
+export function* reposSaga() {
+    yield takeLatest(fetchReposData.type, fetchReposDataHandler);
+};

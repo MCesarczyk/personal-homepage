@@ -1,34 +1,34 @@
-# This is my personal homepage ![rocket icon](./src/assets/images/readme/home-199.svg)
+# This is my personal homepage ![rocket icon](./readme_assets/home-199.svg)
 
 The page is to summarize my achievements so far, show my future plans and simply make contact with me easier 😊  
 The page contains brief informations about my skills, my planned direction of development and my portfolio confains of GitHub repositories.
 
-![preview in light mode](./src/assets/images/readme/demo_light.gif)
+![preview in light mode](./readme_assets/demo_light.gif)
 
 You can obviously switch to dark mode if you want to:
 
-![theme switching](./src/assets/images/readme/theme_switching.gif)
+![theme switching](./readme_assets/theme_switching.gif)
 
 The app will change theme. Moreover, your preferences will be saved in local storage, so next time you'll be visiting my page, it will be displayed of remembered theme of your choice 😉
 
-![preview in dark mode](./src/assets/images/readme/demo_dark.gif)
+![preview in dark mode](./readme_assets/demo_dark.gif)
 
 After loading a page you can see loading animation for a while and then list of my public repositories will be listed. You can browse the repositories or check deployed versions of all of them, by clicking on proper link.
 
-![loading repositories list](./src/assets/images/readme/repos_light.gif)
+![loading repositories list](./readme_assets/repos_light.gif)
 
 In case of any loading issues, you'll get proper information and would check my repositories later using attached link:
 
-![error handling](./src/assets/images/readme/error_dark.gif)
+![error handling](./readme_assets/error_dark.gif)
 
 To get in touch with me, just click on blue button or simply scroll to the bottom of page, where you can find email address and some socials thumbnails of mine:
 
-![getting in touch](./src/assets/images/readme/contact_light.gif)
+![getting in touch](./readme_assets/contact_light.gif)
 
 ***
 ***
 
-## The app contains such technologies as: ![rocket icon](./src/assets/images/readme/tool-box.svg)
+## The app contains such technologies as: ![rocket icon](./readme_assets/tool-box.svg)
 - Responsive web design
 - CSS-Flexbox
 - CSS-Grid
@@ -36,25 +36,44 @@ To get in touch with me, just click on blue button or simply scroll to the botto
 - Error handling
 - Promises, Async/Await
 - AJAX/API/LocalStorage
-- React 17 features
+- React 19
 - Styled components
 - React/custom Hooks
 - React-Redux
 - Redux-Saga
 - React Router
+- Typescript
+- Docker
 
 ***
 ***
 ## Demo: 
 
 https://mcesarczyk.github.io/personal-homepage/
-![rocket icon](./src/assets/images/readme/rocket.svg)
 
 ***
+***
+## Deployment with Docker: ![rocket icon](./readme_assets/rocket.svg)
+
+To deploy the app with Docker, you need to have Docker installed on your machine.  
+Then, you can simply clone the repository and run the following commands:
+- build image:
+
+```bash
+docker image build \
+--build-arg REACT_APP_GITHUB_ACCOUNT_URL=https://api.github.com/users/{Github username} \
+--build-arg REACT_APP_GITHUB_API_TOKEN={your personal token} -t ph:1.0 .
+```
+
+- run container:
+
+```bash
+docker container run -d -p 8000:80 --name ph-prod-1.0 -t ph:1.0
+```
 
 _____________________
 
-## Getting Started with Create React App ![rocket icon](./src/assets/images/readme/hammer-and-screwdriver.svg)
+## Getting Started with Create React App ![rocket icon](./readme_assets/hammer-and-screwdriver.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
